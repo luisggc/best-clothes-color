@@ -1,8 +1,14 @@
-body, #root, 
-html  {
+body,
+#root,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background: rgb(233,233,233);
+background: -moz-radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 100%);
+background: radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e9e9",endColorstr="#ffffff",GradientType=1);
 }
 
 *,
@@ -11,17 +17,37 @@ html  {
   box-sizing: border-box;
 }
 
+header {
+  background-color: black;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header p, header h3 {
+  margin: 0
+}
+
 .look {
+  margin-top: 50px;
   height: 100%;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.calca-svg {
+.look g:not(.look-image)  {
   position: relative;
   z-index: 2;
   mix-blend-mode: multiply;
 }
 
+.color-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
