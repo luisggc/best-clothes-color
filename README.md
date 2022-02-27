@@ -6,7 +6,7 @@
 - ColorPicker and position absolute
 - useState
 
-![demo-image.png]
+![Example](demo-image.png)
 
 # Getting Started with Create React App
 
