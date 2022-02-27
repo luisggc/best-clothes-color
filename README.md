@@ -1,3 +1,11 @@
+# Best Clothes Color
+
+[Click here](https://best-clothes-color.netlify.app/) to see the demo.
+
+- SVG + Image Manipulation
+- ColorPicker and position absolute
+- useState
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
